@@ -3013,26 +3013,26 @@ input, select, textarea {
 	}
 
 		table tbody tr {
-			border: solid 1px;
+			border: solid 6px;
 			border-left: 0;
 			border-right: 0;
 		}
 
 		table td {
-			padding: 0.75rem 0.75rem;
-			font-family: "Source Sans Pro";
-			font-size: 1rem;
-			text-align: center;
+			font-family: "Source Sans Pro", Sans;
+			font-size: 2rem;
+			padding: 0 0.75rem 0.75rem 0.75rem;
+			text-align: left;
 		}
 
 		table th {
 			font-family: "Merriweather", Georgia, serif;
-			font-size: 0.8rem;
-			font-weight: 900;
+			font-size: 1rem;
+			font-weight: 400;
 			letter-spacing: 0.075em;
 			line-height: 1.5;
 			padding: 0 0.75rem 0.75rem 0.75rem;
-			text-align: center;
+			text-align: left;
 		}
 
 			@media screen and (max-width: 980px) {
@@ -3236,8 +3236,8 @@ input, select, textarea {
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: #212931;
-			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
+			background-color: rgba(63,76,119,1);
+			background-image: linear-gradient( 112.1deg,  rgba(32,38,57,1) 11.4%, rgba(63,76,119,1) 70.2% );
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
