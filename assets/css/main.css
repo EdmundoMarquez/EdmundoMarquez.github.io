@@ -145,6 +145,11 @@ input, select, textarea {
 
 	body {
 		color: #212931;
+		background-color: #313131;
+		opacity: 0.7;
+		background-image: radial-gradient(#f7b4a1 0.8500000000000001px, #313131 0.8500000000000001px);
+		background-size: 17px 17px;
+
 	}
 
 	body, input, select, textarea {
@@ -3236,8 +3241,6 @@ input, select, textarea {
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: rgba(63,76,119,1);
-			background-image: linear-gradient( 112.1deg,  rgba(32,38,57,1) 11.4%, rgba(63,76,119,1) 70.2% );
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
