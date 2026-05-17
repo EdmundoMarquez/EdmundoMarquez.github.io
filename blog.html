@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog &mdash; Edmundo Marquez</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo"><img src="assets/img/banner.png"></a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="blog">
+      <h1>Blog</h1>
+      <div class="post-list" id="post-list"></div>
+    </section>
+  </main>
+
+  <script>
+    async function loadPosts() {
+      try {
+        const res = await fetch('data/blog.json');
+        const posts = await res.json();
+        const container = document.getElementById('post-list');
+
+        container.innerHTML = posts.map(post => {
+          const date = new Date(post.date);
+          const formatted = date.toLocaleDateString('en-US', {
+            year: 'numeric', month: 'long', day: 'numeric'
+          });
+          return `
+            <article class="post-card">
+              <time datetime="${post.date}">${formatted}</time>
+              <h2><a href="${post.url}">${post.title}</a></h2>
+              <p>${post.subtitle}</p>
+            </article>
+          `;
+        }).join('');
+      } catch (err) {
+        console.error('Failed to load posts:', err);
+      }
+    }
+    loadPosts();
+  </script>
+
+  <footer>
+    <p>&copy; 2026 Edmundo Márquez</p>
+    <div class="social-links">
+      <a href="mailto:edmundo@example.com">Email</a>
+      <a href="https://github.com/EdmundoMarquez" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/edmundo-marquez/ target=_blank">LinkedIn</a>
+    </div>
+  </footer>
+</body>
+</html>

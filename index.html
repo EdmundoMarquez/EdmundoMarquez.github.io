@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edmundo Marquez</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo"><img src="assets/img/banner.png"></a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Edmundo Márquez</h1>
+      <p class="subtitle">Game Developer</p>
+      <div class="tool-icons">
+        <img height="32" width="32" src="https://cdn.simpleicons.org/Unity"/>
+        <img height="32" width="32" src="https://cdn.simpleicons.org/GodotEngine"/>
+        <img height="32" width="32" src="https://cdn.simpleicons.org/.NET"/>
+        <img height="32" width="32" src="https://cdn.simpleicons.org/Python"/>
+      </div>
+      <p>I develop scalable clean code in Unity and Godot Engine.</p><br>
+      <a href="#contact"><button>Get in touch</button></a>
+      <a href="https://es.fiverr.com/s/5rYDgxb" target="_blank"><button class="fiverr-button">Find me on Fiverr</button></a>
+    </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <article class="project-card">
+          <h3>Mech Spa</h3>
+          <p>Casual spa simulator with roguelike elements and customization.</p>
+          <a href="#" class="project-link">View on GitHub</a>
+        </article>
+        <article class="project-card">
+          <h3>Fishing Game</h3>
+          <p>Responsive dashboard using modern CSS.</p>
+
+          <a href="#" class="project-link">View on GitHub</a>
+        </article>
+        <article class="project-card" style="opacity: 0.5;">
+          <h3>Coming Soon</h3>
+          <p>New projects are still in development.</p>
+          <!-- <a href="#" class="project-link">View on GitHub</a> -->
+        </article>
+        
+      </div>
+    </section>
+
+    <section class="about">
+      <h2>About</h2>
+      <p>Unity developer with over 4 years of experience in mobile and AR/XR Unity applications in different plattforms (Android, Web, iOS, Windows). Studying my bachelor in Interactive Technologies in Digital Animation and my previous work experience have helped me strengthen my game programming and team work skills, as well i'm capable of being independent and resourceful. I'm motivated to create products with high impact that fuse technology and entertainment.
+        <br><br>I focus on detecting architecture problems and solving technical debt with clean code and good programming practices that will make your games scalable in the long run. My workflow also integrates CI/CD and unit testing so every feature gets constantly tested and reviewed, making scalable bug-free code a prority.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact me</h2>
+      <p>Send me a message for an inquiry or consultation.</p>
+      <p><b>My active hours are Tue-Sat from 9:00-19:00 PST Time.</b></p>
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Your name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="your@email.com">
+
+        <label for="message">Service description</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Describe the service you need..."></textarea>
+
+        <button type="submit" id="submit-btn">Send message</button>
+      </form>
+      <div id="form-status"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Edmundo Marquez</p>
+    <div class="social-links">
+      <a href="mailto:edmundo@marquez.com">Email</a>
+      <a href="https://github.com/EdmundoMarquez" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/edmundo-marquez/ target=_blank">LinkedIn</a>
+    </div>
+  </footer>
+  <script src="assets/scripts/contact-form.js"></script>
+</body>
+</html>
