@@ -133,11 +133,12 @@ h2 {
   display: inline-block;
   background-color: #564991;
   width: 300px;
+  max-height: 400px;
   border: 1px solid #e5e5e5;
   border-radius: 6px;
   padding: 1.25rem;
   margin: 0.5rem;
-  box-shadow: 2px 2px 10px #cee5ffa0 inset;
+  /* box-shadow: 2px 2px 10px #cee5ffa0 inset; */
 }
 
 .project-card h3 {
@@ -151,11 +152,16 @@ h2 {
   margin-bottom: 0.75rem;
 }
 
-/* .project-card:hover
+.project-card img
+{
+  width: 100%;
+}
+
+.project-card:hover
 {
   scale: 1.05;
   box-shadow: 2px 2px 20px #cee5ff inset;
-} */
+}
 
 .project-link {
   font-size: 0.875rem;
