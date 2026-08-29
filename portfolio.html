@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edmundo Marquez</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo"><img src="assets/img/banner.png"></a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="https://blog.edmundomarquez.com/">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <button onclick="openPortfolio('portfolio-gd')">Game Design Portfolio</button>
+    <button onclick="openPortfolio('portfolio-qa')">QA Portfolio</button>
+    <section id="portfolio-gd" class="portfolio">
+      <h2>Game Design Portfolio</h2>
+      <div>
+      <h3>Ducky Clicker</h3>
+      <span style="font-size: 0.8rem;">Plattforms: Android, Web | State: In Development | Development Time: 1.5 months</span>
+      <img src="assets/img/ducky_clicker_ss.png" style="max-width: 400px; max-height: 400px;"/>
+      <br>
+      <h3>Mech Spa</h3>
+      <span style="font-size: 0.8rem;">Plattforms: PC (Steam) | State: Released | Development Time: 2 years</span>
+      <img src="assets/img/mech-spa-ss.png" style="max-width: 400px; max-height: 400px;"/>
+      <br>
+      <h3>Project Nahual</h3>
+      <span style="font-size: 0.8rem;">Plattforms: PC | State: Released | Development Time: 1 month</span>
+      <img src="assets/img/project_nahual_ss.png" style="max-width: 400px; max-height: 400px;"/>  
+      </div>
+    </section>
+
+    <section id="portfolio-qa" class="portfolio">
+      <h2>Game Testing Portfolio</h2>
+      <b>Bug Report Case - Source of Madness</b>
+      <br>
+      Gameplay Bug - Big enemy gets stuck inside map geometry
+      <p>
+      When the player has an active Cold Guardian and a big enemy becomes frozen at the start area of Cave of Lost Souls, enemy gets stuck
+      between the top of the cave. It only returns to ground while getting frozen again.
+      </p>
+      <p>Severity rankings: 1= crashes 2=game stoping bugs 3=all other bugs
+      <br>Severity: 3</p>
+      <p>
+      At the start of the Cave of Lost Souls biome, if you have equipped Cold Hold III or have a Cold Guardian active it's possible
+      to make a big enemy get stuck inside the initial area if the freeze projectile hits it. 
+      </p>
+      <p>
+        Actual Results: The enemy flies and gets stuck at the top of the cave tile. It continues to shoot projectiles or attack, but becomes unreachable until Cold Guardian frozes enemy again.
+        <br>Expected results: The enemy physics should let enemy fall to ground and continue attacking player.
+        <br>Repro: 1/5
+      </p>
+      <img src="assets/img/source_of_madnes_bug_08_24_26.gif" style="max-width: 400px; max-height: 400px;">
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Edmundo Marquez</p>
+    <div class="social-links">
+      <a href="mailto:edmundomarquez@pm.me">Email</a>
+      <a href="https://github.com/EdmundoMarquez" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/edmundo-marquez" target=_blank>LinkedIn</a>
+    </div>
+  </footer>
+
+  <script>
+    function openPortfolio(theme) {
+        var i;
+        var x = document.getElementsByClassName("portfolio");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        document.getElementById(theme).style.display = "block";
+      }
+    
+    openPortfolio('portfolio-gd');
+  </script>
+</body>
+</html>
