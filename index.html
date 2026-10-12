@@ -3,77 +3,142 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Edmundo Marquez</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Edmundo Marquez - Game Programmer</title>
+  <link rel="stylesheet" href="styles/styles-general.css">
+  <link rel="stylesheet" href="styles/styles-light-mode.css">
 </head>
 <body>
   <header>
     <nav>
-      <a href="index.html" class="logo"><img src="assets/img/banner.png"></a>
+      <div id="logo-container">
+        <a href="index.html" class="logo"><img src="assets/img/profile-icon.png"></a>
+        <h1 style="margin-left: 20px;">Edmundo Márquez</h1>
+      </div>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="https://blog.edmundomarquez.com/">Blog</a></li>
       </ul>
+      <button id="color-mode-btn" onclick="toggleColorMode()">
+          <img id="color-mode-img" src="https://www.svgrepo.com/show/513491/light-bulb.svg">
+      </button>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero" style="background: linear-gradient(to bottom, #f0ece58d, #2c2f368c), url('assets/img/banner.png') no-repeat top center; background-size: cover;">
       <h1>Edmundo Márquez</h1>
-      <p class="subtitle">Game Developer</p>
-      <div class="tool-icons">
+      <h2 class="subtitle">Game Developer</h2>
+      <!-- <div class="tool-icons">
         <img height="32" width="32" src="https://cdn.simpleicons.org/Unity"/>
         <img height="32" width="32" src="https://cdn.simpleicons.org/GodotEngine"/>
         <img height="32" width="32" src="https://cdn.simpleicons.org/.NET"/>
         <img height="32" width="32" src="https://cdn.simpleicons.org/Python"/>
-      </div>
-      <p>I develop scalable clean code in Unity and Godot Engine.</p><br>
-      <a href="#projects"><button style="background-color: blue;">Projects</button></a>
+      </div> -->
+      <p>I deliver scalable clean code in Unity and Godot Engine.</p><br>
+      <a href="https://mega.nz/file/oiRFVDDa#y2a87a_eRQFi7dp_y69MO_mJ5YoCx1EiDJGlMsKxE4g" target="_blank"><button style="background-color: #C99A64;">Resume</button></a>
       <a href="#contact"><button>Get in touch</button></a>
-      <a href="https://es.fiverr.com/s/5rYDgxb" target="_blank"><button class="fiverr-button">Find me on Fiverr</button></a>
     </section>
-
-    <section id="projects" class="projects">
-      <h2>Projects</h2>
-      <div class="project-list">
-          <article class="project-card">
-          <a href="#"><img src="assets/img/ducky_clicker_ss.png"></a>
-          <h3>Ducky Clicker</h3>
-          <p>Incremental idle clicker with customization, ads integration and IAP purchases.</p>
-          <a href="#" class="project-link">View on Play Store</a>
-        </article>
-        <article class="project-card">
-          <a href="https://store.steampowered.com/app/4466150/Mech_Spa/"><img src="assets/img/mech-spa-ss.png"></a>
-          <h3>Mech Spa</h3>
-          <p>Casual spa simulator with roguelike elements and customization.</p>
-          <a href="https://store.steampowered.com/app/4466150/Mech_Spa/" class="project-link">View on Steam</a>
-        </article>
-        <article class="project-card">
-          <a href="https://github.com/EdmundoMarquez/project-nahual/"><img src="assets/img/project_nahual_ss.png"></a>
-          <h3>Project Nahual</h3>
-          <p>FPS game running on HTML5 with weapon selection and PCG levels.</p>
-          
-          <a href="https://github.com/EdmundoMarquez/project-nahual/" class="project-link">View on GitHub</a>
-        </article>
-        <article class="project-card">
-          <a href="https://thetempogoat.itch.io/death-jam"><img src="assets/img/death_jam_ss.png"></a>
-          <h3>Death Jam</h3>
-          <p>Casual rhythm game similar to Guitar Hero featuring 3 levels with 20 min duration each.</p>
-          <a href="https://thetempogoat.itch.io/death-jam" class="project-link">View on Itch.io</a>
-        </article>
-      </div>
-    </section>
-    <a href="portfolio.html"><button style="width: 400px; margin: 0 20%; text-align: center;">
-      See all projects
-    </button></a>
-    <br><br>
     <section class="about">
-      <h2>About</h2>
-      <p>Unity developer with over 4 years of experience in mobile and AR/XR Unity applications in different plattforms (Android, Web, iOS, Windows). Studying my bachelor in Interactive Technologies in Digital Animation and my previous work experience have helped me strengthen my game programming and team work skills, as well i'm capable of being independent and resourceful. I'm motivated to create products with high impact that fuse technology and entertainment.
+      <h2>Hello, there!</h2>
+      <p>I'm a game programmer with nearly 5 years of experience creating dynamic game play experiences across multiple platforms. Developed engaging casual games and educational applications, boosting user retention and engagement through innovative mechanics. Proficient in Unity and Godot, with a strong focus on performance optimization, data handling and user-centric design. Passionate about collaboration and continuous improvement, dedicated to delivering high-quality gaming solutions.
         <br><br>I focus on detecting architecture problems and solving technical debt with clean code and good programming practices that will make your games scalable in the long run. My workflow also integrates CI/CD and unit testing so every feature gets constantly tested and reviewed, making scalable bug-free code a prority.</p>
     </section>
-
+    <div class="separator"></div>
+    <section id="pub-projects" class="projects">
+      <div class="project-list">
+          <div style="padding: 2.5rem;">
+            <h1>Published Games</h1>
+            <h2 class="subtitle">Games I have worked on during my career.</h2>
+          </div>
+          <article class="project-card" style="background-size: contain; background: linear-gradient(to bottom, #f0ece58d, #2c2f368c), url('assets/img/ducky_clicker_cover.png') no-repeat top center;">
+            <div id="content">
+              <span>Godot Engine | On Development | C#</span>
+              <h3>Ducky Clicker</h3>
+              <p>Role: Lead Programmer</p>
+              <p>Incremental idle clicker with customization, ads integration and IAP purchases.</p>
+              <a href="#"><button>View on Play Store</button></a>
+            </div>
+        </article>
+        <article class="project-card" style="background-size: cover; background: linear-gradient(to bottom, #f0ece58d, #2c2f368c), url('assets/img/mech_spa_cover.png') no-repeat top center;">
+          <div id="content">
+            <span>Godot Engine | Released | GDScript</span>
+            <h3>Mech Spa</h3>
+            <p>Role: Lead Programmer</p>
+            <p>Casual spa simulator with roguelike elements and customization.</p>
+            <a href="https://store.steampowered.com/app/4466150/Mech_Spa/"><button>Play on Steam</button></a>
+          </div>
+        </article>
+        <article class="project-card" style="background-size: cover; background: linear-gradient(to bottom, #f0ece58d, #2c2f368c), url('assets/img/cosmic_investor_cover.png') no-repeat top center;">
+          <div id="content">
+            <span>Unity Engine | Released | C#</span>
+            <h3>Cosmic Investor</h3>
+            <p>Role: Lead Programmer</p>
+            <p>Educational game running on HTML5, Android and iOS consisting on saving worlds in a shot em' up and investment simulator.</p>
+            <a href="https://taktaktak.com/detalle/inversor-cosmico" class="project-link"><button>Studio Website</button></a>
+          </div>
+        </article>
+        <article class="project-card" style="background-size: cover; background: linear-gradient(to bottom, #f0ece58d, #2c2f368c), url('assets/img/fototun_cover.png') no-repeat top center;">
+          <div id="content">
+            <span>Unity Engine | Released | C#</span>
+            <h3>Fototun</h3>
+            <p>Role: Gameplay Programmer</p>
+            <p>Educational game running on HTML5, Android and iOS, focused on farming simulation and learning about photosyntesis. </p>
+            <a href="https://taktaktak.com/detalle/fototun" class="project-link"><button>Studio Website</button></a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section id="per-projects" class="projects">
+      <div class="project-list">
+          <div style="padding: 2.5rem;">
+            <h2>Personal Projects</h2>
+            <h2 class="subtitle">Non-commercial projects I have worked on.</h2>
+          </div>
+          <article class="project-card-2">
+            <div id="content">
+                <div style="width: 50%;">
+                  <span>Hammer Editor++ | Garry's Mod</span>
+                  <h3>Watery Outpost</h3>
+                  <p>Scripted level built in 2 weeks using the Skateboard principle as basis in level design. This level showcases my skills making levels from greyboxing to final product and used visual scripting and sequences in Hammer Editor.</p>
+                  <br><br>
+                  <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3761633352"><button>View on Steam Community</button></a>
+                </div>
+                <div style="width: 50%;">
+                  <img src="assets/img/watery_outpost_cover.png">
+                </div>
+            </div>
+        </article>
+        <article class="project-card-2">
+            <div id="content">
+                <div style="width: 50%;">
+                  <img src="assets/img/death_jam_cover.gif">
+                </div>
+                <div style="width: 50%;">
+                  <span>Unity Engine | C#</span>
+                  <h3>Death Jam</h3>
+                  <p>Project developed during the 20 Second Jam. I worked on a small demo on PC for a rhythm game similar to Guitar
+                    Hero, with 20 seconds songs for each stage.</p>
+                  <br><br>
+                  <a href="https://thetempogoat.itch.io/death-jam"><button>View on Itch.io</button></a>
+                </div>
+            </div>
+        </article>
+        <article class="project-card-2">
+            <div id="content">
+              <div style="width: 50%;">
+                <span>Unity Engine | C#</span>
+                <h3>Settings Menu Template</h3>
+                <p>Tool developed to simplify implementation of settings for graphics, multi-layered audio and accessiblity options like font type and size, having multiple presets to choose from.</p>
+                <br><br>
+                <a href="https://thetempogoat.itch.io/settings-menu"><button>View on Itch.io</button></a>
+              </div>
+              <div style="width: 50%;">
+              <img src="assets/img/settings_menu_cover.png">
+              </div>
+            </div>
+        </article>
+      </div>
+    </section>
     <section id="contact">
       <h2>Contact me</h2>
       <p>Send me a message for an inquiry or consultation.</p>
@@ -103,5 +168,28 @@
     </div>
   </footer>
   <script src="assets/scripts/contact-form.js"></script>
+  <script>
+    let colorMode = true;
+    let colorToggle = document.getElementById("color-mode-img");
+
+    function toggleColorMode()
+    {
+      console.log("pressing color mode");
+      colorMode = !colorMode;
+      let sheets = document.getElementsByTagName('link');
+      if(colorMode)
+      {
+        colorToggle.setAttribute("src", "https://www.svgrepo.com/show/513491/light-bulb.svg");
+        colorToggle.style.maxWidth = "16px";
+        sheets[1].href = 'styles/styles-light-mode.css';
+      }
+      else
+      {
+        colorToggle.setAttribute("src", "https://www.svgrepo.com/show/513395/light-bulb.svg");
+        colorToggle.style.maxWidth = "16px";
+        sheets[1].href = 'styles/styles-dark-mode.css';
+      }
+    }
+  </script>
 </body>
 </html>
