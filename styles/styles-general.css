@@ -11,6 +11,11 @@ body {
   line-height: 1.6;
 }
 
+main {
+  margin: 0 auto;
+  padding: 1.5rem 0;
+}
+
 a {
   color: inherit;
   text-decoration:none;
@@ -87,7 +92,7 @@ nav ul a.active {
 
 #about
 {
-  padding: 0 4rem;
+  padding: 4rem 8rem;
   width: 100%;
 }
 
@@ -140,7 +145,8 @@ span
 .project-card #content
 {
   color: #F0ECE5;
-  text-align: left;
+  padding: 0 12vw;
+  text-align: center;
 }
 
 .project-card button, .project-card-2 button
