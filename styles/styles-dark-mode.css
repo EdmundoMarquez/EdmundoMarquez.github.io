@@ -4,7 +4,7 @@ body {
 
 button
 {
-  background-color: #ffffff5d;
+  background-color: #ffffff;
   color: #1B2C40;
   border: 1px solid #000000;
   box-shadow: 2px 2px 5px #0000009a;
@@ -32,15 +32,6 @@ main {
 .hero {
   color: #1B2C40;
   background: linear-gradient(to bottom, #f0ece58d, #2c2f368c), url("assets/img/ducky_clicker_ss.png") no-repeat top center;
-}
-
-.project-card {
-  color: #1B2C40;
-  box-shadow: 2px 2px 10px #cee5ffa0 inset;
-}
-
-.project-card p {
-  color: #1B2C40;
 }
 
 .project-link {

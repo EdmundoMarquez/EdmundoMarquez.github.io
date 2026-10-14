@@ -25,9 +25,9 @@ button
 {
   font-family: 'Source Code Pro', monospace;
   border-radius: 6px;
-  padding: 0.5rem;
+  padding: 0.8rem;
   margin: 0 1%;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 button:hover
@@ -42,7 +42,6 @@ header h1{
 }
 
 nav {
-  max-width: 720px;
   margin: 0 auto;
   padding: 1.25rem 1.5rem;
   display: flex;
@@ -67,16 +66,10 @@ nav ul a.active {
   text-underline-offset: 4px;
 }
 
-main {
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 1.5rem 0;
-}
-
 .hero {
-  margin-bottom: 8vw;
+  margin-bottom: 4vw;
+  align-content: center;
   text-align: center;
-
   min-height: 250px;
 }
 
@@ -84,6 +77,18 @@ main {
   font-size: 2.5rem;
   margin-bottom: 0.25rem;  
   font-style: normal;
+}
+
+#hero-buttons
+{
+  text-align: center;
+  margin-bottom: 4vw;
+}
+
+#about
+{
+  padding: 0 4rem;
+  width: 100%;
 }
 
 .subtitle {
@@ -101,11 +106,6 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
-
-h3{
-  font-size: 1.25rem;
-}
-
 span
 {
   font-family: "Source Code Pro", monospace;
@@ -113,20 +113,21 @@ span
 }
 
 .projects{
+  width: auto;
+  height: auto;
   margin-bottom: 4rem;
-}
-
-.project-list {
-  text-align: center;
 }
 
 .project-card {
   width: 100%;
-  display: flex;
-  min-height: 400px;
+  height: 100%;
+  min-height: 350px;
+  padding: 4rem;
+  /* box-shadow: 2px 2px 10px #cee5ffa0 inset; */
 }
 
 .project-card h3 {
+  color: #C99A64;
   font-size: 1.125rem;
   margin-bottom: 0.25rem;
 }
@@ -138,9 +139,21 @@ span
 
 .project-card #content
 {
-  width: inherit;
-  align-content: center;
-  text-align: center;
+  color: #F0ECE5;
+  text-align: left;
+}
+
+.project-card button, .project-card-2 button
+{
+  background-color: #C99A64;
+}
+
+.project-card img
+{
+  width: 100%;
+  height: 50%;
+  min-width: 250px;
+  max-width: 300px;
 }
 
 .project-card-2{
@@ -171,15 +184,17 @@ span
   font-size: 0.875rem;
 }
 
-.about, #contact
+
+#contact
 {
-  padding: 2.5rem;
+  width: 100%;
+  padding: 4rem;
+  text-align: justify;
   margin-bottom: 1%;
 }
 
-.about p {
+#about p {
   text-align: justify;
-  max-width: 560px;
 }
 
 .blog h1 {
@@ -211,7 +226,7 @@ span
 }
 
 footer {
-  max-width: 720px;
+  width: auto;
   margin: 0 auto;
   padding: 2rem 1.5rem 3rem;
   display: flex;
@@ -230,6 +245,8 @@ footer {
   margin-right: 5px;
 }
 
+
+
 #logo-container
 {
   align-items: center;
@@ -246,7 +263,7 @@ footer {
   flex-direction: column;
   gap: 0.75rem;
   margin-top: 1.5rem;
-  max-width: 480px;
+  width: 100%;
 }
 
 #contact-form label {

@@ -4,7 +4,7 @@ body {
 
 button
 {
-  background-color: #ffffff5d;
+  background-color: #ffffff;
   color: #2C2F36;
   border: 1px solid #000000;
   box-shadow: 2px 2px 5px #0000009a;
@@ -32,14 +32,6 @@ main {
 
 .hero {
   color: #FFFFFF;
-}
-
-.project-card {
-  box-shadow: 2px 2px 10px #cee5ffa0 inset;
-}
-
-.project-card p {
-  color: #1e182a ;
 }
 
 .project-link {
